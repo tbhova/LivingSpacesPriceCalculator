@@ -67,26 +67,14 @@
 
             <EditText
                 android:id="@+id/UpdatedDate"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
                 tools:layout_editor_absoluteX="125dp"
                 tools:layout_editor_absoluteY="76dp" />
 
         </LinearLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="108dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </ScrollView>
 
         <LinearLayout
             android:id="@+id/FinalPriceLayout"
@@ -102,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Current Price"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 tools:layout_editor_absoluteX="153dp"
                 tools:layout_editor_absoluteY="348dp" />
 
@@ -112,11 +100,37 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="$--.--"
-                android:textSize="24sp"
+                android:textSize="28sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="65dp"
                 tools:layout_editor_absoluteY="331dp" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/caclulatePriceButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="108dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
 
     </LinearLayout>
 
