@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 String date = priceInput.getText().toString();
 
             }
-=        });
+        });
 
         final Context mainContext = this;
         dateInput.setOnClickListener(new View.OnClickListener() {
